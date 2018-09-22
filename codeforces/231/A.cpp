@@ -1,22 +1,17 @@
-#include <iostream>
-using namespace std;
+#include<stdio.h>
+int main()
+{
+    int i,n,a,b,c,count=0;
+    scanf("%d",&n);
+    
+    for(i=0;i<n;i++){
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>0&&b>0||b>0&&c>0||c>0&&a>0){
+        count++;
+    }
+    }
+    printf("%d\n",count);
 
-int main() {
-	int n;
-	cin>>n;
-	int co=0;
-	while(n--)
-	{	int a,b,c;
-	
-	cin>>a>>b>>c;
-	int sum=a+b+c;
-	if(sum==2 || sum==3) co++;
-	
-		
-		
-		
-		
-	}
-	cout<<co<<endl;
-	return 0;
+    return 0;
+
 }
