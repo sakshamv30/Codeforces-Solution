@@ -1,22 +1,20 @@
-#include <bits/stdc++.h>
- 
+#include<bits/stdc++.h>
 using namespace std;
- 
-string s;
-long n,i,a[1000],d;
- 
 int main(){
-	cin>>s;
-	a['z']=0;
-	for(i=0;i<s.length();i++)
-		if(a[s[i]]==0)
-			{
-				a[s[i]]++;
-				d++;
-			}	
-	if(d%2==0)
-		cout<<"CHAT WITH HER!";
-	else
-		cout<<"IGNORE HIM!";
-	return 0;
+
+    string str;
+    int cnt = 0,len,ar[26] = {0};
+    cin >> str;
+    len = str.size();
+    for(int i = 0; i < len; i++){
+
+        if(ar[str[i] - 'a'] == 0){
+            cnt++;
+            ar[str[i] - 'a'] = 1;
+        }
+    }
+    if(!(cnt%2))cout << "CHAT WITH HER!" << endl;
+    else cout << "IGNORE HIM!" << endl;
+
+    return 0;
 }
