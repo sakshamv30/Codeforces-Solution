@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+ int n,c=0;
+ scanf("%d",&n);
+ while(n>=5)
+ {
+    n=n-5;
+    c++;
+ }
+ while(n>=4)
+ {
+    n=n-4;
+    c++;
+ }while(n>=3)
+ {
+    n=n-3;
+    c++;
+ }while(n>=2)
+ {
+    n=n-2;
+    c++;
+ }while(n>=1)
+ {
+    n=n-1;
+    c++;
+ }
+ printf("%d",c);
+}
