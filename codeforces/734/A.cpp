@@ -1,19 +1,27 @@
-#include <iostream>
-using namespace std;
+#include <bits/stdc++.h>
 
-int main() {
-	int n;
-	cin>>n;
-	string s;
-	cin>>s;
-	int a=0,d=0;
-	for(int i=0;i<n;i++){
-		if(s[i]=='A')a++;
-		else d++;
-	}
-	if(a>d)cout<<"Anton"<<endl;
-	else if(a<d)cout<<"Danik"<<endl;
-	else cout<<"Friendship"<<endl;
-	
-	return 0;
+    using namespace std;
+
+int main()
+{
+    int count=0,rount=0,i,n;
+   string joy;
+   cin>>n;
+   cin>>joy;
+    for(i=0;i<n;i++)
+    {
+        if(joy[i]=='A')
+            count++;
+        else
+            rount++;
+    }
+    if(count>rount)
+        cout<<"Anton"<<endl;
+        else if(rount>count)
+            cout<<"Danik"<<endl;
+        if(count==rount)
+        cout<<"Friendship"<<endl;
 }
+
+
+
